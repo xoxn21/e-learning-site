@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback & Reviews</title>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #e0f2fe;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e3a8a;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .reviews, .form-section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .review {
+      background-color: #1e293b;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .review img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #38bdf8;
+    }
+    .review-content {
+      flex-grow: 1;
+    }
+    .stars {
+      color: gold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.8rem;
+      background-color: #38bdf8;
+      color: #0f172a;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Feedback</h1>
+  </header>
+
+  <section class="reviews">
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1">
+      <div class="review-content">
+        <strong>Sarah A.</strong>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>This platform helped me land a job in tech! Great instructors and content.</p>
+      </div>
+    </div>
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 2">
+      <div class="review-content">
+        <strong>David M.</strong>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <p>Excellent resources for learning digital marketing. Highly recommended!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Leave Your Feedback</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Write your feedback..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
